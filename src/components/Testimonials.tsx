@@ -82,7 +82,7 @@ const Testimonials: React.FC = () => {
             quote="The filtering options are amazing. I was able to find a group that plays exactly the way I enjoy - heavy roleplay with tactical combat."
             name="Dominic Blackthorn"
             role="Player"
-            rating={4}
+            rating={5}
             delay={300}
           />
         </div>

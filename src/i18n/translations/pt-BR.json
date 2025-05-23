@@ -1,0 +1,109 @@
+{
+  "header": {
+    "start": "Início",
+    "features": "Recursos",
+    "faq": "FAQ",
+    "beta": "Beta"
+  },
+  "hero": {
+    "title": "Taverna",
+    "subtitle": "Conectando mestres e jogadores de RPG para aventuras lendárias",
+    "cta": "Começar Agora",
+    "forGameMasters": "Para Mestros de RPG",
+    "forPlayers": "Para Jogadores"
+  },
+  "emailSignup": {
+    "title": "Obtenha Acesso Beta",
+    "subtitle": "Cadastre-se agora para receber acesso antecipado e um reconhecimento especial de \"Beta Tester\" no seu perfil.",
+    "inputPlaceholder": "Digite seu email",
+    "button": "Enviar",
+    "joining": "Enviando",
+    "success": "Você está na lista!",
+    "successMessage": "Você foi adicionado à lista de beta. Notificaremos quando o beta estiver pronto.",
+    "errorEnterEmail": "Por favor, digite seu email"
+  },
+  "features": {
+    "title": "Tudo o que você precisa para aventuras de RPG épicas",
+    "subtitle": "Seja um mestre ou um jogador, Taverna simplifica a busca e a organização da sua próxima campanha de RPG.",
+    "feature1": {
+      "title": "Para Mestres",
+      "description": "Crie campanhas com descrições ricas, defina seu sistema, tom, e estilo de jogo para atrair os jogadores perfeitos."
+    },
+    "feature2": {
+      "title": "Para Jogadores",
+      "description": "Navegue por campanhas, entre em um jogo e mergulhe em um mundo de aventura."
+    },
+    "feature3": {
+      "title": "Fácil e Intuitivo",
+      "description": "Em apenas alguns cliques, crie ou entre em uma campanha. Sem burocracia, apenas role seus dados e comece a jogar!"
+    },
+    "feature4": {
+      "title": "Bônus de Beta",
+      "description": "Participe do beta e receba acesso antecipado mais um reconhecimento especial de \"Beta Tester\" no seu perfil."
+    }
+  },
+  "howItWorks": {
+    "title": "Como o Taverna Funciona",
+    "subtitle": "Encontrar ou criar seu grupo perfeito de RPG nunca foi tão fácil",
+    "step1": {
+      "title": "Descubra",
+      "description": "Navegue pelas campanhas disponíveis ou crie a sua própria. Filtre por sistema de jogo, estilo de jogo, frequência das sessões e muito mais."
+    },
+    "step2": {
+      "title": "Crie ou Entre",
+      "description": "Mestres podem criar listagens detalhadas de campanhas com todas as informações que os jogadores precisam. Jogadores podem navegar e se candidatar a jogos que correspondam às suas preferências."
+    },
+    "step3": {
+      "title": "Conecte",
+      "description": "Após a aprovação, conecte-se com seu grupo através do nosso chat integrado ou da sua plataforma preferida. Agende sessões e coordene os detalhes."
+    },
+    "step4": {
+      "title": "Jogue",
+      "description": "Role iniciativa e comece sua aventura! Após as sessões, deixe feedback para ajudar outros a encontrarem ótimos grupos e mestres."
+    }
+  },
+  "betaFeedback": {
+    "title": "O que Nossos Testadores Beta Dizem",
+    "subtitle": "Junte-se ao nosso beta e receba acesso antecipado, além de uma borda especial e o título de 'Beta Tester' no seu perfil. Veja o que jogadores e mestres que já se juntaram à nossa taverna têm a dizer",
+    "feedback1": {
+      "title": "Como mestre, sempre tive dificuldade em encontrar jogadores consistentes. O Taverna me ajudou a montar um grupo confiável em menos de uma semana!",
+      "name": "Marcus Tilverton",
+      "type": "Mestre de RPG"
+    },
+    "feedback2": {
+      "title": "Mudei para uma nova cidade e pensei que meus dias de D&D tinham acabado. Graças ao Taverna, encontrei uma campanha incrível que se encaixa perfeitamente na minha agenda.",
+      "name": "Elora Windwood",
+      "type": "Jogadora"
+    },
+    "feedback3": {
+      "title": "As opções de filtro são incríveis. Consegui encontrar um grupo que joga exatamente do jeito que eu gosto - muito roleplay com combate tático.",
+      "name": "Dominic Blackthorn",
+      "type": "Jogador"
+    }
+  },
+  "callToAction": {
+    "title": "Junte-se ao Nosso Programa Beta",
+    "subtitle": "Seja um dos primeiros aventureiros a experimentar o Taverna e receba benefícios exclusivos de testador beta",
+    "benefits": {
+      "title": "Benefícios do Testador Beta",
+      "earlyAccess": "Acesso antecipado a todos os recursos antes do lançamento público",
+      "exclusiveBadge": "Distintivo exclusivo de \"Beta Tester\" no seu perfil",
+      "specialBorder": "Borda especial para seu avatar que mostra seu status de pioneiro",
+      "directInput": "Influência direta em novos recursos e melhorias"
+    }
+  },
+  "footer": {
+    "navigation": {
+      "home": "Início",
+      "features": "Recursos",
+      "howItWorks": "Como Funciona",
+      "beta": "Beta"
+    },
+    "legal": {
+      "privacyPolicy": "Política de Privacidade",
+      "termsOfService": "Termos de Serviço",
+      "contactUs": "Contato"
+    },
+    "copyright": "Forjado com dados e coragem nas terras do código."
+  }
+}

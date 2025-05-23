@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Scroll, Users, Compass, Sparkles } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -38,42 +39,43 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 };
 
 const Features: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 bg-[#1e1e1e] text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Everything You Need For Epic RPG Adventures
+            {t("features.title")}
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Whether you're a Dungeon Master or a Player, Tavern simplifies
-            finding and organizing your next RPG campaign.
+            {t("features.subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <FeatureCard
             icon={<Scroll size={24} className="text-amber-400" />}
-            title="For DMs"
-            description="Create campaigns with rich descriptions, define your system, tone, and play style to attract the perfect players."
+            title={t("features.feature1.title")}
+            description={t("features.feature1.description")}
             delay={100}
           />
           <FeatureCard
             icon={<Users size={24} className="text-amber-400" />}
-            title="For Players"
-            description="Browse adventures and find tables that match your style, preferences, and availability."
+            title={t("features.feature2.title")}
+            description={t("features.feature2.description")}
             delay={200}
           />
           <FeatureCard
             icon={<Compass size={24} className="text-amber-400" />}
-            title="Easy & Intuitive"
-            description="In just a few clicks, create or join a campaign. No bureaucracy, just roll your dice and start playing!"
+            title={t("features.feature3.title")}
+            description={t("features.feature3.description")}
             delay={300}
           />
           <FeatureCard
             icon={<Sparkles size={24} className="text-amber-400" />}
-            title="Beta Perks"
-            description="Join our beta and receive early access plus a special border and 'Beta Tester' title for your profile."
+            title={t("features.feature4.title")}
+            description={t("features.feature4.description")}
             delay={400}
           />
         </div>

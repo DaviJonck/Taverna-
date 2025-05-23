@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import logo from "../assets/logo";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,20 +49,20 @@ const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {["Start", "Features", "Faq", "beta"].map((item) => (
-              <button
-                key={item}
-                onClick={() => scrollToSection(item)}
-                className="font-cinzel text-white/80 hover:text-gold transition-colors"
-              >
-                {item
-                  .split("-")
-                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-                  .join(" ")}
-              </button>
-            ))}
-          </nav>
+          <div className="hidden md:flex items-center space-x-8">
+            <nav className="flex space-x-8">
+              {["start", "features", "faq", "beta"].map((item) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(item)}
+                  className="font-cinzel text-white/80 hover:text-gold transition-colors"
+                >
+                  {t(`header.${item}`)}
+                </button>
+              ))}
+            </nav>
+            <LanguageSwitcher />
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -73,18 +76,18 @@ const Header: React.FC = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden py-4 flex flex-col space-y-4 animate-fadeIn">
-            {["features", "for-dms", "for-players", "beta"].map((item) => (
+            {["start", "features", "faq", "beta"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
                 className="font-cinzel text-white/80 hover:text-gold transition-colors py-2 border-b border-background-lighter"
               >
-                {item
-                  .split("-")
-                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-                  .join(" ")}
+                {t(`header.${item}`)}
               </button>
             ))}
+            <div className="pt-4">
+              <LanguageSwitcher />
+            </div>
           </nav>
         )}
       </div>

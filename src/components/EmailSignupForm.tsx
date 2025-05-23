@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const EmailSignupForm: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -7,17 +8,19 @@ const EmailSignupForm: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 
+  const { t } = useTranslation();
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
 
     if (!email) {
-      setError("Please enter your email address");
+      setError(t("emailSignup.errorEnterEmail"));
       return;
     }
 
     if (!/^\S+@\S+\.\S+$/.test(email)) {
-      setError("Please enter a valid email address");
+      setError(t("emailSignup.errorInvalidEmail"));
       return;
     }
 
@@ -35,23 +38,19 @@ const EmailSignupForm: React.FC = () => {
       <div className="bg-gray-800 p-6 rounded-lg border border-[#ffd70033] text-center">
         <CheckCircle className="mx-auto mb-4 text-amber-400" size={40} />
         <h3 className="text-xl font-bold text-white mb-2">
-          You're on the list!
+          {t("emailSignup.success")}
         </h3>
-        <p className="text-gray-300">
-          We'll send you an invitation when beta access is ready. You'll receive
-          your special "Beta Tester" border and title!
-        </p>
+        <p className="text-gray-300">{t("emailSignup.successMessage")}</p>
       </div>
     );
   }
 
   return (
     <div className="bg-[#2a2a2af2] p-6 rounded-lg border border-[#ffd70033]">
-      <h3 className="text-xl font-bold text-white mb-2">Get Beta Access</h3>
-      <p className="text-gray-300 mb-4">
-        Join now to receive early access and a special "Beta Tester" recognition
-        on your profile.
-      </p>
+      <h3 className="text-xl font-bold text-white mb-2">
+        {t("emailSignup.title")}
+      </h3>
+      <p className="text-gray-300 mb-4">{t("emailSignup.subtitle")}</p>
 
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
         <div className="flex-grow">
@@ -60,7 +59,7 @@ const EmailSignupForm: React.FC = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
+              placeholder={t("emailSignup.inputPlaceholder")}
               className={`w-full px-4 py-3 rounded-lg bg-gray-600 text-black border ${
                 error ? "border-red-500" : "border-gray-600"
               } focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent`}
@@ -107,11 +106,12 @@ const EmailSignupForm: React.FC = () => {
                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                   ></path>
                 </svg>
-                Joining
+                {t("emailSignup.joining")}
               </span>
             ) : (
               <span className="flex items-center">
-                Join <ArrowRight className="ml-1" size={16} />
+                {t("emailSignup.button")}{" "}
+                <ArrowRight className="ml-1" size={16} />
               </span>
             )}
           </button>
