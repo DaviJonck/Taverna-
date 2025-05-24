@@ -1,6 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { Shield, Sparkles } from "lucide-react";
+import { Shield } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import EmailSignupForm from "./EmailSignupForm";
 import Wizard from "../assets/wizard.png";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Scroll } from "lucide-react";
+
 import { useTranslation } from "react-i18next";
 
 const Footer: React.FC = () => {

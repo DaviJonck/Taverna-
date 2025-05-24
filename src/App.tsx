@@ -5,8 +5,9 @@ import Testimonials from "./components/Testimonials";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+
 const SectionDivider = () => (
-  <div className="relative ">
+  <div className="relative">
     <div className="absolute top-0 left-0 right-0 h-px w-full overflow-hidden">
       <div className="absolute top-0 left-1/2 h-full w-[90%] -translate-x-1/2 bg-gradient-to-r from-transparent via-[#ffd700] to-transparent" />
     </div>
@@ -17,12 +18,20 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <Header />
-      <Hero />
+      <section id="start">
+        <Hero />
+      </section>
       <SectionDivider />
-      <Features />
-      <HowItWorks />
-      <Testimonials />
-      <CallToAction />
+      <section id="features">
+        <Features />
+      </section>
+      <section id="faq">
+        <HowItWorks />
+      </section>
+      <section id="beta">
+        <Testimonials />
+        <CallToAction />
+      </section>
       <Footer />
     </div>
   );
