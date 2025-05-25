@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface TestimonialProps {
   quote: string;
@@ -51,37 +52,38 @@ const Testimonial: React.FC<TestimonialProps> = ({
 };
 
 const Testimonials: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-20 bg-[#1e1e1e] text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            What Our Beta Testers Say
+            {t("betaFeedback.title")}
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Hear from players and DMs who've already joined our tavern
+            {t("betaFeedback.subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Testimonial
-            quote="As a DM, I've always struggled finding consistent players. Tavern helped me build a reliable group in less than a week!"
-            name="Marcus Tilverton"
-            role="Dungeon Master"
+            quote={t("betaFeedback.feedback1.title")}
+            name={t("betaFeedback.feedback1.name")}
+            role={t("betaFeedback.feedback1.type")}
             rating={5}
             delay={100}
           />
           <Testimonial
-            quote="I moved to a new city and thought my D&D days were over. Thanks to Tavern, I found an amazing campaign that fits my schedule perfectly."
-            name="Elora Windwood"
-            role="Player"
+            quote={t("betaFeedback.feedback2.title")}
+            name={t("betaFeedback.feedback2.name")}
+            role={t("betaFeedback.feedback2.type")}
             rating={5}
             delay={200}
           />
           <Testimonial
-            quote="The filtering options are amazing. I was able to find a group that plays exactly the way I enjoy - heavy roleplay with tactical combat."
-            name="Dominic Blackthorn"
-            role="Player"
+            quote={t("betaFeedback.feedback3.title")}
+            name={t("betaFeedback.feedback3.name")}
+            role={t("betaFeedback.feedback3.type")}
             rating={5}
             delay={300}
           />
