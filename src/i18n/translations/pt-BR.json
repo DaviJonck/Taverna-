@@ -6,7 +6,7 @@
     "beta": "Beta"
   },
   "hero": {
-    "title": "Taverna",
+    "title": "Questr",
     "subtitle": "Conectando mestres e jogadores de RPG para aventuras lendárias",
     "cta": "Começar Agora",
     "forGameMasters": "Para Mestros de RPG",
@@ -14,7 +14,7 @@
   },
   "emailSignup": {
     "title": "Obtenha Acesso Beta",
-    "subtitle": "Cadastre-se agora para receber acesso antecipado e um reconhecimento especial de \"Beta Tester\" no seu perfil.",
+    "subtitle": "Cadastre-se agora para receber acesso antecipado, ajudar no desenvolvimento e um reconhecimento especial no futuro.",
     "inputPlaceholder": "Digite seu email",
     "button": "Enviar",
     "joining": "Enviando",
@@ -24,7 +24,7 @@
   },
   "features": {
     "title": "Tudo o que você precisa para aventuras de RPG épicas",
-    "subtitle": "Seja um mestre ou um jogador, Taverna simplifica a busca e a organização da sua próxima campanha de RPG.",
+    "subtitle": "Seja um mestre ou um jogador, Questr simplifica a busca e a organização da sua próxima campanha de RPG.",
     "feature1": {
       "title": "Para Mestres",
       "description": "Crie campanhas com descrições ricas, defina seu sistema, tom, e estilo de jogo para atrair os jogadores perfeitos."
@@ -43,7 +43,7 @@
     }
   },
   "howItWorks": {
-    "title": "Como o Taverna Funciona",
+    "title": "Como o Questr Funciona",
     "subtitle": "Encontrar ou criar seu grupo perfeito de RPG nunca foi tão fácil",
     "step1": {
       "title": "Descubra",
@@ -62,32 +62,41 @@
       "description": "Role iniciativa e comece sua aventura! Após as sessões, deixe feedback para ajudar outros a encontrarem ótimos grupos e mestres."
     }
   },
-  "betaFeedback": {
-    "title": "O que Nossos Testadores Beta Dizem",
-    "subtitle": "Junte-se ao nosso beta e receba acesso antecipado, além de uma borda especial e o título de 'Beta Tester' no seu perfil. Veja o que jogadores e mestres que já se juntaram à nossa taverna têm a dizer",
-    "feedback1": {
-      "title": "Como mestre, sempre tive dificuldade em encontrar jogadores consistentes. O Taverna me ajudou a montar um grupo confiável em menos de uma semana!",
-      "name": "Marcus Tilverton",
-      "type": "Mestre de RPG"
+  "futureFeatures": {
+    "title": "O que o futuro nos reserva",
+    "subtitle": "Pretendemos ser uma plataforma de RPG que seja acessível para todos. Não vamos parar nas campanhas - planejamos criar um ecossistema completo de RPG de mesa online.",
+    "feature1": {
+      "title": "Criação de Campanhas ",
+      "description": "Crie campanhas com descrições ricas, defina seu sistema, tom, e estilo de jogo para atrair os jogadores perfeitos."
     },
-    "feedback2": {
-      "title": "Mudei para uma nova cidade e pensei que meus dias de D&D tinham acabado. Graças ao Taverna, encontrei uma campanha incrível que se encaixa perfeitamente na minha agenda.",
-      "name": "Elora Windwood",
-      "type": "Jogadora"
+    "feature2": {
+      "title": "Gerenciamento de Fichas",
+      "description": "Crie, gerencie e compartilhe fichas de personagem com seu grupo. Suporte para múltiplos sistemas de RPG e fichas personalizadas."
     },
-    "feedback3": {
-      "title": "As opções de filtro são incríveis. Consegui encontrar um grupo que joga exatamente do jeito que eu gosto - muito roleplay com combate tático.",
-      "name": "Dominic Blackthorn",
-      "type": "Jogador"
+    "feature3": {
+      "title": "Ferramentas de Comunicação Avançadas",
+      "description": "Chat de voz e vídeo integrado, rolagem de dados e compartilhamento de anotações de campanha para melhorar suas sessões."
+    },
+    "feature4": {
+      "title": "Agendamento e Lembretes",
+      "description": "Sistema inteligente de agendamento com lembretes automáticos, tratamento de fuso horário e ferramentas de planejamento de sessões."
+    },
+    "feature5": {
+      "title": "Sistema de Conquistas e Recompensas",
+      "description": "Ganhe badges, títulos e recompensas por participação, criatividade e ajudar a construir a comunidade."
+    },
+    "feature6": {
+      "title": "Marketplace e Criação de Conteúdo",
+      "description": "Compartilhe campanhas personalizadas, mapas e conteúdo com a comunidade. Apoie criadores e descubra conteúdo incrível."
     }
   },
   "callToAction": {
     "title": "Junte-se ao Nosso Programa Beta",
-    "subtitle": "Seja um dos primeiros aventureiros a experimentar o Taverna e receba benefícios exclusivos de testador beta",
+    "subtitle": "Seja um dos primeiros aventureiros a experimentar o Questr e receba benefícios exclusivos!",
     "benefits": {
-      "title": "Benefícios do Testador Beta",
-      "earlyAccess": "Acesso antecipado a todos os recursos antes do lançamento público",
-      "exclusiveBadge": "Distintivo exclusivo de \"Beta Tester\" no seu perfil",
+      "title": "Benefícios do Aventureiro Fundador",
+      "earlyAccess": "Acesso antecipado a recursos antes do lançamento público",
+      "exclusiveBadge": "Distintivo exclusivo de \"Aventureiro Fundador\" no seu perfil e discord",
       "specialBorder": "Borda especial para seu avatar que mostra seu status de pioneiro",
       "directInput": "Influência direta em novos recursos e melhorias"
     }

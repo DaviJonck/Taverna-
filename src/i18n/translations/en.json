@@ -6,7 +6,7 @@
     "beta": "Beta"
   },
   "hero": {
-    "title": "Taverna",
+    "title": "Questr",
     "subtitle": "Connecting RPG masters and players for legendary adventures",
     "cta": "Get Started",
     "forGameMasters": "For Game Masters",
@@ -14,7 +14,7 @@
   },
   "emailSignup": {
     "title": "Get Beta Access",
-    "subtitle": "Join now to receive early access and a special \"Beta Tester\" recognition on your profile.",
+    "subtitle": "Join now to receive early access and a special \"Founder\" recognition on your profile.",
     "inputPlaceholder": "Enter your email",
     "button": "Join",
     "joining": "Joining",
@@ -24,7 +24,7 @@
   },
   "features": {
     "title": "Everything You Need For Epic RPG Adventures",
-    "subtitle": "Whether you're a Dungeon Master or a Player, Taverna simplifies finding and organizing your next RPG campaign.",
+    "subtitle": "Whether you're a Dungeon Master or a Player, Questr simplifies finding and organizing your next RPG campaign.",
     "feature1": {
       "title": "For DMs",
       "description": "Create campaigns with rich descriptions, define your system, tone, and play style to attract the perfect players."
@@ -39,11 +39,11 @@
     },
     "feature4": {
       "title": "Beta Perks",
-      "description": "Join our beta and receive early access plus a special border and 'Beta Tester' title for your profile."
+      "description": "Join our beta and receive early access plus a special border and 'Founder' title for your profile."
     }
   },
   "howItWorks": {
-    "title": "How Taverna Works",
+    "title": "How Questr Works",
     "subtitle": "Finding or creating your perfect RPG group has never been easier",
     "step1": {
       "title": "Discover",
@@ -62,33 +62,42 @@
       "description": "Roll initiative and begin your adventure! After sessions, leave feedback to help others find great groups and DMs."
     }
   },
-  "betaFeedback": {
-    "title": "What Our Beta Testers Say",
-    "subtitle": "Join our beta and receive early access plus a special border and 'Beta Tester' title for your profileHear from players and DMs who've already joined our tavern",
-    "feedback1": {
-      "title": "As a DM, I've always struggled finding consistent players. Tavern helped me build a reliable group in less than a week!",
-      "name": "Marcus Tilverton",
-      "type": "Dungeon Master"
+  "futureFeatures": {
+    "title": "What the Future Holds",
+    "subtitle": "We aim to be an RPG platform that is accessible to everyone. We won't stop at campaigns - we plan to create a complete online tabletop RPG ecosystem.",
+    "feature1": {
+      "title": "Virtual Tabletop Integration",
+      "description": "Seamlessly integrate with popular VTT platforms like Roll20, Foundry VTT, and more for a complete gaming experience."
     },
-    "feedback2": {
-      "title": "I moved to a new city and thought my D&D days were over. Thanks to Tavern, I found an amazing campaign that fits my schedule perfectly.",
-      "name": "Elora Windwood",
-      "type": "Player"
+    "feature2": {
+      "title": "Character Sheet Management",
+      "description": "Create, manage, and share character sheets with your group. Support for multiple RPG systems and custom sheets."
     },
-    "feedback3": {
-      "title": "The filtering options are amazing. I was able to find a group that plays exactly the way I enjoy - heavy roleplay with tactical combat.",
-      "name": "Dominic Blackthorn",
-      "type": "Player"
+    "feature3": {
+      "title": "Advanced Communication Tools",
+      "description": "Built-in voice and video chat, dice rolling, and campaign notes sharing to enhance your gaming sessions."
+    },
+    "feature4": {
+      "title": "Campaign Scheduling & Reminders",
+      "description": "Smart scheduling system with automatic reminders, timezone handling, and session planning tools."
+    },
+    "feature5": {
+      "title": "Achievement & Reward System",
+      "description": "Earn badges, titles, and rewards for participation, creativity, and helping build the community."
+    },
+    "feature6": {
+      "title": "Marketplace & Content Creation",
+      "description": "Share custom campaigns, maps, and content with the community. Support creators and discover amazing content."
     }
   },
   "callToAction": {
     "title": "Join Our Beta Program",
-    "subtitle": "Be among the first adventurers to experience Taverna and receive exclusive beta tester benefits",
+    "subtitle": "Be among the first adventurers to experience Questr and receive exclusive Founder benefits",
     "benefits": {
-      "title": "Beta Tester Benefits",
+      "title": "Founder Benefits",
       "earlyAccess": "Early access to all features before public release",
-      "exclusiveBadge": "Exclusive \"Beta Tester\" profile badge",
-      "specialBorder": "Special border for your avatar that shows your OG status",
+      "exclusiveBadge": "Exclusive \"Founder\" profile badge and Discord role",
+      "specialBorder": "Special border for your avatar that shows your Founder status",
       "directInput": "Direct input on new features and improvements"
     }
   },

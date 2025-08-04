@@ -1,7 +1,6 @@
+# Questr
 
-# Taverna
-
-https://davijonck.github.io/Taverna-/
+https://davijonck.github.io/Questr-/
 
 Uma landing page moderna e responsiva construída com React, TypeScript e Tailwind CSS, focada na captação de emails e usuários para sua plataforma. O projeto oferece uma experiência de usuário otimizada para conversão, com formulários intuitivos e design atraente.
 

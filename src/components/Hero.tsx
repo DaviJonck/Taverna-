@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { Sword, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import EmailSignupForm from "./EmailSignupForm";
-import logo from "../assets/logo";
+import logo from "../assets/Logo.png";
 
 const Hero: React.FC = () => {
   const { ref, inView } = useInView({
@@ -14,8 +14,6 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-[#1a1a1a] text-white">
-      {/* Background pattern */}
-
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div
           ref={ref}
@@ -24,10 +22,7 @@ const Hero: React.FC = () => {
           }`}
         >
           <div className="mb-2 flex justify-center">
-            <div
-              className="text-gold mr-2"
-              dangerouslySetInnerHTML={{ __html: logo }}
-            />
+            <img src={logo} alt="Questr" className="w-10 h-10 mr-2" />
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-[#ffd700]">
