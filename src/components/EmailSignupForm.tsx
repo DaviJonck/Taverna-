@@ -10,27 +10,35 @@ const EmailSignupForm: React.FC = () => {
 
   const { t } = useTranslation();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
 
-    if (!email) {
-      setError(t("emailSignup.errorEnterEmail"));
-      return;
-    }
-
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
+    if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
       setError(t("emailSignup.errorInvalidEmail"));
       return;
     }
 
     setIsLoading(true);
 
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        const data = await response.json();
+        setError(data.error || t("emailSignup.errorGeneric"));
+      }
+    } catch (err) {
+      setError(t("emailSignup.errorNetwork"));
+    } finally {
       setIsLoading(false);
-      setIsSubmitted(true);
-    }, 1000);
+    }
   };
 
   if (isSubmitted) {
