@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import logo from "../../public/Logo.png";
+import logo from "/Logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header: React.FC = () => {
