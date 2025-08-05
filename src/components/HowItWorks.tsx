@@ -59,8 +59,8 @@ const Step: React.FC<StepProps> = ({ title, description, number }) => {
       </div>
 
       <div className="flex-1">
-        <h3 className="text-xl font-bold mb-3 text-amber-400 flex items-center gap-2">
-          <span className="text-2xl">⚔️</span>
+        <h3 className="text-xl font-bold mb-3 text-[#ffd700] flex items-center gap-2">
+          <span className="text-2xl text-[#3b4bd8]">⚔️</span>
           {title}
         </h3>
         <p className="text-gray-300 leading-relaxed">{description}</p>
@@ -76,7 +76,7 @@ const HowItWorks: React.FC = () => {
     <section className="py-20 bg-[#1a1a1a] text-white relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#ffd700]">
             {t("howItWorks.title")}
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">

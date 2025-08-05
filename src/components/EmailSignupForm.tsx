@@ -15,7 +15,7 @@ const EmailSignupForm: React.FC = () => {
     setError("");
 
     if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
-      setError(t("emailSignup.errorInvalidEmail"));
+      setError(t("emailSignup.errorEnterEmail"));
       return;
     }
 
@@ -68,7 +68,7 @@ const EmailSignupForm: React.FC = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t("emailSignup.inputPlaceholder")}
-              className={`w-full px-4 py-3 rounded-lg bg-gray-600 text-black border ${
+              className={`w-full px-4 font-poppins py-3 rounded-lg bg-gray-600 text-white border ${
                 error ? "border-red-500" : "border-gray-600"
               } focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent`}
             />

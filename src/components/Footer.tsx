@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import {
-  X,
-  Mail,
-  Shield,
-  FileText,
-  CheckCircle,
-  AlertCircle,
-} from "lucide-react";
+import { X, Mail, Shield } from "lucide-react";
 import { sendEmail } from "../config/emailjs";
 
 interface ModalProps {
@@ -123,15 +116,15 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="bg-[#1a1a1a] text-gray-200 py-12 border-t border-gray-400">
+      <footer className="bg-[#1a1a1a]  text-gray-200 py-12 border-t border-gray-400">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="flex items-center mb-6 md:mb-0">
-              <span className="text-2xl font-bold text-white">Questr</span>
+              <span className="text-xl font-bold text-white">Questr</span>
             </div>
           </div>
 
-          <div className="border-t border-gray-400 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="border-t border-gray-400 pt-8 mt-8 flex text-xs flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Questr. {t("footer.copyright")}
             </div>
@@ -262,7 +255,7 @@ const Footer: React.FC = () => {
                   <div>
                     <p className="font-medium text-white">Discord</p>
                     <p className="text-sm text-gray-400">
-                      https://discord.gg/questr
+                      discord.gg/SFj3A5EFxw
                     </p>
                   </div>
                 </div>

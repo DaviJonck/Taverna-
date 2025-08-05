@@ -13,7 +13,7 @@ const CallToAction: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 bg-[#1e1e1e] text-white relative overflow-hidden">
+    <section className="py-20 bg-[#1a1a1a] text-white relative overflow-hidden">
       {/* Decorative elements */}
 
       <div className="container mx-auto px-4 relative z-10">

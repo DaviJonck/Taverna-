@@ -3,7 +3,6 @@ import { useInView } from "react-intersection-observer";
 import { Sword, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import EmailSignupForm from "./EmailSignupForm";
-import logo from "../assets/Logo.png";
 
 const Hero: React.FC = () => {
   const { ref, inView } = useInView({
@@ -21,10 +20,6 @@ const Hero: React.FC = () => {
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="mb-2 flex justify-center">
-            <img src={logo} alt="Questr" className="w-10 h-10 mr-2" />
-          </div>
-
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-[#ffd700]">
             {t("hero.title")}
           </h1>

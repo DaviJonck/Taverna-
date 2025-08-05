@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import logo from "../assets/Logo.png";
+import logo from "../../public/Logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header: React.FC = () => {
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img src={logo} alt="Questr" className="w-10 h-10 " />
+            <img src={logo} alt="Questr" className="w-5 h-5 " />
             <span className="font-cinzel text-xl md:text-2xl font-bold text-gold">
               uestr
             </span>

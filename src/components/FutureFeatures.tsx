@@ -48,7 +48,7 @@ const FutureFeature: React.FC<FutureFeatureProps> = ({
 const FutureFeatures: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section className="py-20 bg-[#1e1e1e] text-white">
+    <section className="py-20 px-4 bg-[#1a1a1a] text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
